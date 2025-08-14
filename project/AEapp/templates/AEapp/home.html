@@ -1,0 +1,20 @@
+ {% include 'AEapp/header.html' %}
+{% load static %}
+<body>
+    <div class="homeBox">
+    <div class="homeShowcase">
+        <h2>Produtos</h2>
+         <img src="{% static 'images/product.png' %}" style="height: 570px;">
+        <p>Apresentamos as nossas opções de produtos de higiene...</p>
+        <a href="/produtos">Ver detalhes...</a>
+    </div>
+    <div class="homeShowcase">
+        <h2>Sobre o nosso projeto</h2>
+        <img src="{% static 'images/logo-para-about.png' %}" style="height: 400px;">
+        <p> Somos um grupo de estudantes que decidiu juntar o útil ao agradável: 
+            aprender sobre empreendedorismo enquanto criamos sabonetes artesanais de verdade.
+             Nosso objetivo é oferecer produtos feitos com ingredientes naturais...</p>
+        <a href="/sobre">Ver detalhes...</a>
+    </div>
+    </div>
+</body>

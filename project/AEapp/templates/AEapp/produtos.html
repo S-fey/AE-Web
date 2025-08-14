@@ -1,0 +1,16 @@
+ {% include 'AEapp/header.html' %}
+{% load static %}
+<div class="produto">
+<h1>PRODUTOS</h1>
+
+{% for Product in Products %}
+<div>
+    <h2>{{ Product.name }}</h2>
+    <img height="300" src="{{Product.image.url}}"/>
+    <h2>{{ Product.price}}</h2>
+    <strong><p>{{ Product.description}}</p></strong>
+    <strong><p>Ingredientes: {{ Product.ingredients}}</p></strong>
+
+</div>
+{% endfor %}
+</div>
